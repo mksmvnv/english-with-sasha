@@ -1,6 +1,6 @@
 WORKDIR = ./core
 
-.PHONY = all lint run
+.PHONY: all lint run
 
 all: lint run
 
