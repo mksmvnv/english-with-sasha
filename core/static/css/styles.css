@@ -1,28 +1,50 @@
-.header {
-    display: flex;
-    justify-content: center;
-    padding: 40px;
+@import url('./fonts.css');
+
+:root {
+    --color1: #05b1b1;
+    --color2: #52339a;
 }
 
-.logo img{
-    position: absolute;
-    top: 40px;
-    left: 120px;
+body {
+    font-family: 'CruinnRegular', sans-serif;
 }
 
-.logo img:hover {
-    color: #7c7c7c;
-}
-
-.header-text a{
-    margin: 40px;
-
+header a {
     text-decoration: none;
-    font-size: 20px;
-    color: #181818;
-    transition: color 0.3s;
+    color: var(--bs-black);
+    font-size: 15px;
+
+    transition: all 0.3s ease;
 }
 
-.header-text a:hover {
-    color: #7c7c7c;
+header a:hover {
+    color: var(--color1);
 }
+
+main {
+    padding: 120px 0;
+}
+
+main p {
+    font-size: 20px;
+}
+
+main h1 {
+    font-family: 'CruinnBold', sans-serif;
+    font-size: 60px;
+}
+
+/* main .btn {
+    background-color: var(--color2);
+    color: var(--bs-white);
+    width: 160px;
+    height: 40px;
+
+    transition: all 0.3s ease;
+}
+
+main .btn:hover {
+    background-color: var(--color1);
+} */
+
+
