@@ -1,50 +1,146 @@
 @import url('./fonts.css');
 
 :root {
-    --color1: #05b1b1;
-    --color2: #52339a;
+    --black: #1d1d1d;
+    --white: #fdfdfd;
+    --deep-lilac: #9955bb;
+    --bright-lilac: #db91ef;
+    --light-lilac: #edc9f9;
 }
 
 body {
-    font-family: 'CruinnRegular', sans-serif;
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: var(--color1);
+    font-size: 15px;
 }
 
-header a {
+
+/* Header */
+
+
+.header-text {
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.header-text a {
+    margin: 20px;
+
     text-decoration: none;
-    color: var(--bs-black);
-    font-size: 15px;
+    color: var(--black);
 
     transition: all 0.3s ease;
 }
 
-header a:hover {
-    color: var(--color1);
+.header-text a:hover {
+    color: var(--bright-lilac);
 }
 
-main {
-    padding: 120px 0;
+
+/* Main */
+
+
+.main-title {
+    padding: 200px;
+
+    background-color: var(--light-lilac);
 }
 
-main p {
+.main-title p {
+    margin: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     font-size: 20px;
 }
 
-main h1 {
-    font-family: 'CruinnBold', sans-serif;
-    font-size: 60px;
+.main-title h1 {
+    margin: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    font-size: 100px;
 }
 
-/* main .btn {
-    background-color: var(--color2);
-    color: var(--bs-white);
-    width: 160px;
-    height: 40px;
+.main-title-button {
+    display: flex;
+    justify-content: center;
+}
+
+.main-title-button button {
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 60px;
+    
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    background-color: var(--deep-lilac);
 
     transition: all 0.3s ease;
 }
 
-main .btn:hover {
-    background-color: var(--color1);
-} */
+.main-title-button button p {
+    text-decoration: none;
+    color: var(--white);
+
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 15px;
+}
+
+.main-title-button button:hover {
+    background-color: var(--bright-lilac);
+}
+
+
+/* Footer */
+
+
+.footer-social {
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+
+    scroll-behavior: smooth;
+}
+
+.footer-social a {
+    margin: 20px;
+
+    text-decoration: none;
+    color: var(--black);
+
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: var(--bright-lilac);
+}
+
+#contacts {
+    overflow-y: scroll;
+    scroll-behavior: smooth !important;
+}
+
+.footer-copyright {
+    margin-bottom: 40px;
+
+    display: flex;
+    justify-content: center; 
+}
 
 
