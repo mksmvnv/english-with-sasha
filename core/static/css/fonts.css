@@ -1,10 +1,9 @@
 @font-face {
-    font-family: 'CruinnRegular';
-    src: url('../fonts/cruinn/CruinnRegular.ttf');
+    font-family: "Montserrat-Regular";
+    src: url(../fonts/montserrat/Montserrat-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'CruinnBold';
-    src: url('../fonts/cruinn/CruinnBold.ttf');
+    font-family: "Montserrat-ExtraBold";
+    src: url(../fonts/montserrat/Montserrat-ExtraBold.ttf);
 }
-
