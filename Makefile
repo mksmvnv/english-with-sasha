@@ -1,12 +1,18 @@
-WORKDIR = ./core
-
 .PHONY: all lint run
+
+WORKDIR = ./core
 
 all: lint run
 
 lint:
-	poetry run black $(WORKDIR)
+	@echo "Code formatting..."
+	@poetry run black $(WORKDIR)
+	@echo "Successfully!"
 
 run:
-	poetry run python3 $(WORKDIR)/app.py
+	@echo "Run server..."
+	@poetry run python3 $(WORKDIR)/app.py
+
+
+#clean:
 
