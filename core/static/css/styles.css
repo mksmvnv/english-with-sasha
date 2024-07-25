@@ -8,6 +8,10 @@
     --light-lilac: #edc9f9;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat-Regular', sans-serif;
     color: var(--color1);
@@ -129,11 +133,6 @@ body {
 
 .footer-social a:hover {
     color: var(--bright-lilac);
-}
-
-#contacts {
-    overflow-y: scroll;
-    scroll-behavior: smooth !important;
 }
 
 .footer-copyright {
